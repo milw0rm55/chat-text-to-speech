@@ -2,6 +2,8 @@ package Hundir_la_flota;
 
 import java.util.Random;
 
+import javafx.util.Pair;
+
 public class Tablero {
 	boolean[][] tablero;
 	int totalBarcos;
@@ -21,7 +23,9 @@ public class Tablero {
 			for (int y = 0; y < tablero[i].length; y++) {
 				if (nBarcos < totalBarcos) {
 					tablero[y][i] = rand.nextBoolean();
-					totalBarcos++;
+					if (tablero[y][i]) {
+						nBarcos++;
+					}
 				} else {
 					tablero[y][i] = false;
 				}
@@ -30,9 +34,32 @@ public class Tablero {
 
 		}
 	}
-	
+
 	@Override
 	public String toString() {
-		return null;
+		String result = "";
+		for (int i = 0; i < tablero.length; i++) {
+			if (i != 0) {
+				result += "\n";
+			}
+
+			for (int y = 0; y < tablero[i].length; y++) {
+				if (y != 0) {
+					result += ((tablero[i][y]) ? "/1" : "/0");
+				} else {
+					result += ((tablero[i][y]) ? "1" : "0");
+				}
+			}
+		}
+		return result;
+	}
+
+	public boolean hit(Pair<Integer, Integer> cordenadas) {
+		boolean result = false;
+		if(tablero[cordenadas.getKey()-1][cordenadas.getValue()-1]) {
+			result = true;
+			tablero[cordenadas.getKey()-1][cordenadas.getValue()-1] = false;
+		}
+		return result;
 	}
 }
