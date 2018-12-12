@@ -2,5 +2,18 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/google-api-services-speech-v1-rev65-java-1.25.0.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/speech/google-api-services-speech-v1-rev65-1.25.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/speech/google-api-services-speech-v1-rev65-1.25.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/speech/google-api-services-speech-v1-rev65-1.25.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/cmu_us_kal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/cmulex.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/en_us.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/freetts.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/jsapi.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/sphinx4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/voce.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Milw0rm/Downloads/voce-0.9.1/lib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
